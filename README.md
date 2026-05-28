@@ -114,10 +114,19 @@ aws iam list-attached-role-policies --role-name dev-role
 
 ---
 
-## Evidence
+## Evidence Screenshots
 
-All findings, remediation steps, and verification screenshots are in the `/evidence` folder.
+### IAM Access Analyzer — Active and Scanning
+![Access Analyzer](./evidence/Image%2028-05-2026%20at%2017.30.jpeg)
 
+### AWS Config — Policy Compliance Table
+![Compliance Table](./evidence/Image%2028-05-2026%20at%2017.37.jpeg)
+
+### AWS Config — All Policies Compliance Status
+![Policy Status](./evidence/Image%2028-05-2026%20at%2017.40.jpeg)
+
+### Terminal — Full Remediation Verified
+![Terminal Evidence](./evidence/Image%2028-05-2026%20at%2017.58.jpeg)
 ---
 
 ## Key Concepts Demonstrated
@@ -133,3 +142,34 @@ All findings, remediation steps, and verification screenshots are in the `/evide
 ---
 
 ## Terraform Structure
+
+## How to Deploy
+
+```bash
+cd terraform
+terraform init
+terraform plan
+terraform apply
+```
+
+## How to Destroy
+
+```bash
+terraform destroy
+```
+
+---
+
+## What I Learned
+
+- How IAM policies are structured and what makes them dangerous
+- The difference between AWS Config and IAM Access Analyzer — they detect different types of problems
+- How to apply least privilege in practice — not just in theory
+- Why the Capital One breach happened and how proper IAM hygiene prevents it
+- How to use the AWS CLI to verify IAM changes directly
+- Why dangerous policies should be deleted not just detached
+
+---
+
+## Tools Used
+Terraform · AWS IAM · AWS Config · IAM Access Analyzer · AWS CLI · Git · GitHub
