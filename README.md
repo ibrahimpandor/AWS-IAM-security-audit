@@ -42,7 +42,7 @@ Detection tools deployed:
 
 This policy grants every possible AWS action on every resource. A compromised dev-user could create admin accounts, delete databases, exfiltrate all data, or destroy the entire AWS environment.
 
-### Misconfiguration 2 — Overly Broad S3 Role
+### Misconfiguration 2 — Broad S3 Role
 
 ```json
 {
