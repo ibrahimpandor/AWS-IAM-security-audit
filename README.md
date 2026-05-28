@@ -1,12 +1,12 @@
 # aws-iam-security-audit
 
-A hands-on AWS IAM security audit project — deliberately misconfigured, detected with AWS native tools, and remediated using least privilege principles. Deployed through Terraform.
+AWS IAM security audit project — deliberately misconfigured, detected with AWS native tools, and remediated using least privilege principles. Deployed through Terraform.
 
 ---
 
 ## The Problem This Project Solves
 
-IAM misconfiguration is the single biggest cause of cloud security breaches in the world right now. Over 70% of cloud breaches stem from compromised or misconfigured identities.
+IAM misconfiguration is the biggest cause of cloud security breaches in the world right now. Over 70% of cloud breaches stem from compromised or misconfigured identities.
 
 In 2019 a former AWS employee exploited a misconfigured IAM role at Capital One. The role had far more S3 permissions than it needed. The attacker used those excess permissions to access 106 million customer records. AWS's infrastructure was never breached — Capital One's own misconfiguration was the problem.
 
